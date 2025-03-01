@@ -9,28 +9,73 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>DevBoard</title>
   </head>
   <body class="bg-[#F4F7FF] mt-6">
-      <nav class="max-w-[1536px] mx-auto bg-white rounded-[16px] py-[18px] px-6 flex justify-between items-center">
-        <div class="flex ">
-            <img class="me-2" src="assets/logo.png" alt="">
-            <p class="text-[#00303C] text-[36px] font-light ">Dev<span class="font-bold">Board</span></p>
+    <nav
+      class="max-w-[1536px] mx-auto bg-white rounded-[16px] py-[18px] px-6 flex justify-between items-center mb-5"
+    >
+      <div class="flex">
+        <img class="me-2" src="assets/logo.png" alt="" />
+        <p class="text-[#00303C] text-[36px] font-light">
+          Dev<span class="font-bold">Board</span>
+        </p>
+      </div>
+      <div class="flex">
+        <div
+          class="flex items-center justify-center bg-[#F4F7FF] w-[123px] h-[64px] rounded-[32px] me-10"
+        >
+          <img class="me-2 w-8 h-8" src="assets/checkbox.png" alt="" />
+          <p class="text-[32px] font-bold">23</p>
         </div>
-        <div class="flex">
-            <div class="flex items-center justify-center bg-[#F4F7FF] w-[123px] h-[64px] rounded-[32px] me-10">
-                <img class="me-2 w-8 h-8" src="assets/checkbox.png" alt="">
-                <p class="text-[32px] font-bold">23</p>
+        <div>
+          <img
+            class="p-[12px] bg-[#F4F7FF] rounded-full"
+            src="assets/theme-btn.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </nav>
+    <main class="max-w-[1536px] mx-auto flex gap-[24px]">
+      <section class="w-[75%] bg-white rounded-[16px] p-6">
+        <div class="flex gap-[24px] mb-[64px]">
+          <div
+            class="w-[25%] h-[128px] rounded-[12px] bg-[#f4f7ff] flex justify-center items-center gap-5"
+          >
+            <div class="p-[18px] rounded-full bg-white">
+              <img src="assets/checkbox.png" alt="" />
             </div>
             <div>
-                <img class="p-[12px] bg-[#F4F7FF] rounded-full" src="assets/theme-btn.png" alt="">
+              <h3 class="font-medium opacity-70">Task Assigned</h3>
+              <h4 class="text-[32px] font-bold">6</h4>
             </div>
+          </div>
+          <div
+            class="w-[50%] h-[128px] rounded-[12px] ps-10 flex items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]"
+          >
+            <div class="me-7">
+              <img src="assets/board.png" alt="" />
+            </div>
+            <p class="w-[300px] text-white font-medium text-[24px]">
+              Discover Something New Today!
+            </p>
+          </div>
+          <div class="w-[25%] h-[128px] rounded-[12px] bg-[#f4f7ff] flex justify-center items-center gap-5">
+            <div class="p-[18px] rounded-full bg-white">
+              <img src="assets/calender.png" alt="" />
+            </div>
+            <div>
+              
+              <h4 class="text-[22px] font-medium ">Jul 28 2025</h4>
+            </div>
+          </div>
         </div>
-      </nav>
-    <main class="max-w-[1536px] mx-auto ">
+      </section>
+      <aside class="w-[25%] bg-white rounded-[16px]">ffffffffff</aside>
     </main>
     <script src="app.js"></script>
   </body>
