@@ -10,6 +10,7 @@ let totalTaskCompletedCount = 23;
 
 for (const taskBtn of taskBtnAll) {
   taskBtn.addEventListener("click", function (e) {
+    alert("Board Updated Successfully")
     let remainingTask = (activeTaskCount -= 1);
     let allTaskDone = (totalTaskCompletedCount += 1);
     activeTask.innerText = remainingTask;
@@ -22,6 +23,9 @@ for (const taskBtn of taskBtnAll) {
      You have Complete The Task Add Dark Mode at 12:48:15 PM
     </p>`;
     activityLog.appendChild(div)
+    if(activeTaskCount === 0){
+        alert("Congrats!!! You have completed all the current tasks")
+    }
   });
 }
 
