@@ -7,14 +7,13 @@ const currentDateHTML = document.getElementById("current-date");
 
 let currentDate = new Date().toDateString();
 currentDateHTML.innerText = currentDate;
-let currentTime = new Date().toLocaleTimeString()
-console.log(currentTime)
 let activeTaskCount = 6;
 
 let totalTaskCompletedCount = 23;
 
 for (const taskBtn of taskBtnAll) {
   taskBtn.addEventListener("click", function (e) {
+    let currentTime = new Date().toLocaleTimeString();
     alert("Board Updated Successfully");
     let remainingTask = (activeTaskCount -= 1);
     let allTaskDone = (totalTaskCompletedCount += 1);
