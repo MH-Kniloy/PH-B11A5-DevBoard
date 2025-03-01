@@ -4,9 +4,16 @@ const totalTaskCompleted = document.getElementById("total-tasks-completed");
 const activityLog = document.getElementById("activity-log");
 const historyBtn = document.getElementById("history-btn");
 const currentDateHTML = document.getElementById("current-date");
+const blog = document.getElementById("blog")
+const cards = document.querySelectorAll(".card")
 
 let currentDate = new Date().toDateString();
 currentDateHTML.innerText = currentDate;
+
+blog.addEventListener("click", function(){
+    window.location.href="blog.html"
+})
+
 let activeTaskCount = 6;
 
 let totalTaskCompletedCount = 23;
