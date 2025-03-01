@@ -6,7 +6,6 @@ const historyBtn = document.getElementById("history-btn");
 const colorBtn = document.getElementById("color-btn")
 const currentDateHTML = document.getElementById("current-date");
 const blog = document.getElementById("blog")
-const cards = document.querySelectorAll(".card")
 
 // for current date change 
 let currentDate = new Date().toDateString();
@@ -45,9 +44,13 @@ for (const taskBtn of taskBtnAll) {
 
     e.target.setAttribute("disabled", true);
 
+    let card = e.target.parentElement.parentElement
+
+    let cardTitle = card.querySelector("h2").innerText
+
     const div = document.createElement("div");
     div.innerHTML = `<p class="p-[10px] rounded-[8px] bg-[#f4f7ff] opacity-70 mb-10">
-     You have Complete The Task Add Dark Mode at ${currentTime}
+     You have Complete The Task ${cardTitle} at ${currentTime}
     </p>`;
     activityLog.appendChild(div);
     if (activeTaskCount === 0) {
