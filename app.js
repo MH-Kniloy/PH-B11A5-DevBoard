@@ -11,7 +11,7 @@ let currentDate = new Date().toDateString();
 currentDateHTML.innerText = currentDate;
 
 blog.addEventListener("click", function(){
-    window.location.href="blog.html"
+    window.location.href="html/blog.html"
 })
 
 let activeTaskCount = 6;
