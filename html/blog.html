@@ -14,8 +14,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>DevBlog</title>
 </head>
-<body>
-    <div>blog</div>
-    <script src="../app.js"></script>
+<body class="bg-[#F4F7FF] mt-6">
+    <!-- navbar part start  -->
+    <nav
+      class="max-w-[1536px] mx-auto bg-white rounded-[16px] py-[18px] px-6 flex justify-between items-center mb-5"
+    >
+      <div class="flex">
+        <img class="me-2" src="../assets/logo.png" alt="" />
+        <p class="text-[#00303C] text-[36px] font-light">
+          Dev<span class="font-bold">Board</span>
+        </p>
+      </div>
+      <div >
+        <button class="font-medium py-4 px-7 text-xl text-white bg-[#3752FD] rounded-[8px] active:scale-[0.98]" id="back-btn">Back to Desk</button>
+      </div>
+    </nav>
+    <script src="../js/blog.js"></script>
 </body>
 </html>
